@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="1" onchange="input()">
+    <button onclick="convert()">them</button>
+    <p id="2"></p>
+    <p id="3"></p>
+
+</body>
+<script>
+    function input() {
+        let value = document.getElementById("1").value;
+        document.getElementById("2").innerHTML = value;
+    }
+
+    var camalize = function camalize(str) {
+        return str.toLowerCase().replace(/[^a-zA-Z0-9]+(.)/g, (m, chr) => chr.toUpperCase());
+    }
+
+    function convert() {
+        let value = document.getElementById("1").value;
+        var convert = camalize(value);
+        document.getElementById("3").innerHTML = convert;
+    }
+</script>
