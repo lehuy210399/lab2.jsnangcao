@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var trandau = [{
+            min1: 'begin'
+        }, {
+            min9: 'yellow card team 1'
+        }, {
+            min27: 'team 2 goal'
+        }, {
+            min64: 'yellow card team 2'
+        }, {
+            min85: 'red card team 1'
+        }];
+        // xoa su kien phut 64 the vang:
+        var removed = trandau.slice(3, 1);
+        console.log(trandau);
+        //duyet mang:
+        trandau.map(function(rendar) {
+            console.log(rendar);
+        });
+    </script>
+
+</body>
+
+</html>
